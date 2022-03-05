@@ -1,7 +1,7 @@
-import Head from 'next/head';
+import Head from 'next/head'
+import styles from '../styles/Layout.module.css'
 
-
-export default function layout(title, keywords, description, children) {
+export default function Layout({ title, keywords, description, children }) {
   return (
     <div>
         <Head>
@@ -10,6 +10,9 @@ export default function layout(title, keywords, description, children) {
             <meta name ="keywords" content={keywords}/>
         </Head>
 
+        <div className={styles.container}>
+            {children}
+        </div>
     </div>
   )
 }
