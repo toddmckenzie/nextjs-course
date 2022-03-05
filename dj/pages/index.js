@@ -7,6 +7,7 @@ export default function HomePage() {
     <Layout>
     <h1>Home</h1>
     <Link href="/about">About</Link>
+    <p>Homepage</p>
     </Layout>
   )
 }
