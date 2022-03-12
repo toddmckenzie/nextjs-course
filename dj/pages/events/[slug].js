@@ -10,7 +10,7 @@ export default function MyEvent({evt}) {
   const router = useRouter();
   // console.log(router);
   const deleteEvent = (e) => {
-    console.log('delete')
+    return 
   }
 
   return (
